@@ -1,58 +1,46 @@
-﻿using WebApp.Controllers;
-
-namespace WebApp.Models
+﻿public enum Operators
 {
-    public enum Operators
+    Add,
+    Subtract,
+    Multiply,
+    Divide
+}
+
+public class Calculator
+{
+    public Operators? Operator { get; set; }
+    public double? X { get; set; }
+    public double? Y { get; set; }
+
+    public string Op
     {
-        Add, Sub, Mul, Div
-    }
-    public class Calculator
-    {
-        public Operators? Operator { get; set; }
-        public double? X { get; set; }
-        public double? Y { get; set; }
-
-        public String Op
+        get
         {
-            get
+            return Operator switch
             {
-                switch (Operator)
-                {
-                    case Operators.Add:
-                        return "+";
-                    case Operators.Sub:
-                        return "-";
-                    case Operators.Mul:
-                        return "*";
-                    case Operators.Div:
-                        return "/";
-                    default:
-                        return "";
-                }
-            }
+                Operators.Add => "+",
+                Operators.Subtract => "-",
+                Operators.Multiply => "*",
+                Operators.Divide => "/",
+                _ => ""
+            };
         }
-
-        public bool IsValid()
-        {
-            return Operator != null && X != null && Y != null;
-        }
-
-        public double Calculate()
-        {
-            switch (Operator)
-            {
-                case Operators.Add:
-                    return (double)(X + Y);
-                case Operators.Sub:
-                    return (double)(X - Y);
-                case Operators.Mul:
-                    return (double)(X * Y);
-                case Operators.Div:
-                    return (double)(X / Y);
-                default: return double.NaN;
-            }
-        }
-
     }
 
+    public bool IsValid()
+    {
+        return Operator != null && X != null && Y != null;
+    }
+
+    public double Calculate()
+    {
+        return Operator switch
+        {
+            Operators.Add => (double)(X + Y),
+            Operators.Subtract => (double)(X - Y),
+            Operators.Multiply => (double)(X * Y),
+            Operators.Divide => (double)(X / Y),
+            _ => double.NaN
+        };
+    }
 }

@@ -1,29 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
 
-namespace WebApp.Controllers
+public class CalculatorController : Controller
 {
-    public class CalculatorController : Controller
+    public IActionResult Form()
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        return View();
+    }
 
-        public IActionResult Form()
+    public IActionResult Result(Calculator model)
+    {
+        if (!model.IsValid())
         {
-            return View();
+            return View("Error");
         }
-
-        public IActionResult Result(Calculator model)
-        {
-            if (!model.IsValid())
-            {
-                return View("Error");
-            }
-            return View(model);
-        }
-
-        
+        return View(model);
     }
 }
