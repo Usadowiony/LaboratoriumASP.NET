@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
 
-public class CalculatorController : Controller
+public class BirthController : Controller
 {
     public IActionResult Form()
     {
@@ -9,12 +9,15 @@ public class CalculatorController : Controller
     }
 
     [HttpPost]
-    public IActionResult Result([FromForm] Calculator model)
+    public IActionResult Result([FromForm] Birth model)
     {
         if (!model.IsValid())
         {
             return View("Error");
         }
-        return View(model);
+
+        ViewBag.Name = model.Name;
+        ViewBag.Age = model.CalculateAge();
+        return View();
     }
 }
