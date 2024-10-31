@@ -5,35 +5,45 @@ namespace WebApp.Models
 {
     public class MemoryContactService : IContactService
     {
-        private Dictionary<int, ContactModel> _items = new Dictionary<int, ContactModel>();
+        private readonly IDateTimeProvider _timeProvider;
+        private readonly Dictionary<int, ContactModel> _contacts = new();
+
+        public MemoryContactService(IDateTimeProvider timeProvider)
+        {
+            _timeProvider = timeProvider;
+        }
 
         public int Add(ContactModel contact)
         {
-            int id = _items.Keys.Count != 0 ? _items.Keys.Max() : 0;
-            contact.Id = id + 1;
-            _items.Add(contact.Id, contact);
-            return contact.Id;
-        }
-
-        public void Delete(int id)
-        {
-            _items.Remove(id);
-        }
-
-        public List<ContactModel> FindAll()
-        {
-            return _items.Values.ToList();
-        }
-
-        public ContactModel? FindById(int id)
-        {
-            _items.TryGetValue(id, out var contact);
-            return contact;
+            contact.Created = _timeProvider.GetCurrentDateTime();
+            int newId = _contacts.Count + 1;
+            contact.Id = newId;
+            _contacts.Add(newId, contact);
+            return newId;
         }
 
         public void Update(ContactModel contact)
         {
-            _items[contact.Id] = contact;
+            if (_contacts.ContainsKey(contact.Id))
+            {
+                _contacts[contact.Id] = contact;
+            }
+        }
+
+        public void Delete(int id)
+        {
+            _contacts.Remove(id);
+        }
+
+        public ContactModel FindById(int id)
+        {
+            _contacts.TryGetValue(id, out var contact);
+            return contact;
+        }
+
+        public IEnumerable<ContactModel> GetAll()
+        {
+            return _contacts.Values;
         }
     }
 }

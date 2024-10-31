@@ -35,4 +35,6 @@ public class ContactModel
     [Display(Name = "Data urodzin")]
     public DateTime BirthDate { get; set; }
 
+    [HiddenInput]
+    public DateTime Created { get; set; }
 }

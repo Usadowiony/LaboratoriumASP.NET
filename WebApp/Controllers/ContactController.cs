@@ -14,8 +14,10 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-            return View(_contactService.FindAll());
+            return View(_contactService.GetAll().ToList());
         }
+
+
 
         [HttpGet]
         public IActionResult Add()
