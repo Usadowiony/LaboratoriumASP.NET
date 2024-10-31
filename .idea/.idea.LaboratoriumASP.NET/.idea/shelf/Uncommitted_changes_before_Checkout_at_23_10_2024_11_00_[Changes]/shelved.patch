@@ -1,0 +1,17 @@
+Index: WebApp/Views/Birth/FormBirth.cshtml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"container\">\r\n    <div class=\"row justify-content-md-center\">\r\n        <div class=\"col-6\">\r\n            <h2>kalkulator urodzin</h2>\r\n            <form action=\"BirthResult\" method=\"POST\">\r\n                <div class=\"mb-3\">\r\n                    <label class=\"form-label\" for=\"Name\">Imię</label>\r\n                    <input class=\"form-control\" type=\"text\" name=\"Name\" id=\"Name\"/>\r\n                </div>\r\n                <div class=\"mb-3\">\r\n                    <label class=\"form-label\" for=\"Date\">Data urodzin</label>\r\n                    <input class=\"form-control\" type=\"date\" name=\"Date\" id=\"Date\"/>\r\n                </div>\r\n                \r\n                <div class=\"mb-3\">\r\n                    <button class=\"btn btn-primary\" type=\"submit\">Oblicz</button>\r\n                </div>\r\n                \r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>
+===================================================================
+diff --git a/WebApp/Views/Birth/FormBirth.cshtml b/WebApp/Views/Birth/FormBirth.cshtml
+--- a/WebApp/Views/Birth/FormBirth.cshtml	(revision af1851e6bdc5173271a1f1336af6654085b92d2b)
++++ b/WebApp/Views/Birth/FormBirth.cshtml	(date 1729673440036)
+@@ -1,7 +1,7 @@
+ <div class="container">
+     <div class="row justify-content-md-center">
+         <div class="col-6">
+-            <h2>kalkulator urodzin</h2>
++            <h2>kalkulator Wieku</h2>
+             <form action="BirthResult" method="POST">
+                 <div class="mb-3">
+                     <label class="form-label" for="Name">Imię</label>

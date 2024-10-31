@@ -1,0 +1,17 @@
+@model ContactModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="card" style="width: 18rem; border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); padding: 20px; margin: 20px;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+        <p class="card-text">
+            <strong>Phone:</strong> @Model.PhoneNumber <br />
+            <strong>Email:</strong> @Model.Email
+        </p>
+    </div>
+</div>
+<a class="btn btn-success" asp-action="Back" asp-controller="Contact">Back</a>

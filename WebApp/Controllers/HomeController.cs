@@ -17,57 +17,6 @@ public class HomeController : Controller
     {
         return View();
     }
-    
-    public IActionResult About()
-    {
-        return View();
-    }
-    
-    public IActionResult Calculator(Operator? op, double? x, double? y)
-    {
-        //https://localhost:7101/Home/Calculator?op=add&x=4&y=1,5
-        //var op = Request.Query["op"];
-        //var x = double.Parse(Request.Query["x"]);
-        //var y = double.Parse(Request.Query["y"]);
-        
-        if (x is null || y is null)
-        {
-            ViewBag.ErrorMessage = "Niepoprawny format liczby x lub y lub ich brak!";
-            return View("CalculatorError");
-        }
-
-        if (op is null)
-        {
-            ViewBag.ErrorMessage = "Nieznany operator!";
-            return View("CalculatorError");
-        }
-        double? result = 0.0d;
-        
-        switch (op)
-        {
-            case Operator.Add:
-                result = x + y;
-                ViewBag.Operator = "+";
-                break;
-            case Operator.Sub:
-                result = x - y;
-                ViewBag.Operator = "-";
-                break;
-            case Operator.Mul:
-                result = x * y;
-                ViewBag.Operator = "*";
-                break;
-            case Operator.Div:
-                result = x / y;
-                ViewBag.Operator = ":";
-                break;
-        }
-
-        ViewBag.Result = result;
-        ViewBag.X = x;
-        ViewBag.Y = y;
-        return View();
-    }
 
     public IActionResult Privacy()
     {
@@ -80,12 +29,3 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
-
-public enum Operator
-{
-    Add, Sub, Mul, Div
-}
-
-/*
-Napisz metode Age, która przyjmuje parametr z datą urodzin i wyświetla wiek w latach, miesiącach i dniach.
-*/
