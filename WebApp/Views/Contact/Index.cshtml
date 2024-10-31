@@ -13,6 +13,8 @@
     <tr>
         <th>Imię</th>
         <th>Nazwisko</th>
+        <th>Email</th>
+        <th>Priorytet</th>
         <th>Operacje</th>
     </tr>
     </thead>
@@ -22,6 +24,8 @@
         <tr>
             <td> @entry.Value.FirstName</td>
             <td> @entry.Value.LastName</td>
+            <td> @entry.Value.Email</td>
+            <td> @entry.Value.Priority</td>
             <td>
                 <a class="btn btn-success"> Edycja </a>
                 <a class="btn btn-info" asp-action="Details" asp-controller="Contact" asp-route-id="@entry.Key"> Szczegóły </a>

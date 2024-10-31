@@ -15,7 +15,7 @@ public class ContactController : Controller
                 LastName = "Pietrzak",
                 Email = "wojciechpietrzak@gmail.com",
                 PhoneNumber = "123 456 789",
-                BirthDate = new DateOnly(year: 2001, month: 2, day: 12),
+                BirthDate = new DateTime(2001, 2, 12),
             }
         },
         {
@@ -26,7 +26,7 @@ public class ContactController : Controller
                 LastName = "Komun",
                 Email = "piotr.komun@example.com",
                 PhoneNumber = "123 456 789",
-                BirthDate = new DateOnly(1980, 1, 15),
+                BirthDate = new DateTime(1980, 1, 15),
             }
         },
         {
@@ -37,7 +37,7 @@ public class ContactController : Controller
                 LastName = "Kowalski",
                 Email = "andrzej.kowalski@example.com",
                 PhoneNumber = "123 456 789",
-                BirthDate = new DateOnly(2003, 6, 21),
+                BirthDate = new DateTime(2003, 6, 21),
             }
         },
         {
@@ -48,13 +48,13 @@ public class ContactController : Controller
                 LastName = "Smith",
                 Email = "brat.smith@example.com",
                 PhoneNumber = "123 456 789",
-                BirthDate = new DateOnly(1958, 5, 27),
+                BirthDate = new DateTime(1958, 5, 27),
             }
         }
     };
-    
+
     private static int _currentId = 4;
-    
+
     public IActionResult Index()
     {
         return View(_contacts);
@@ -65,7 +65,7 @@ public class ContactController : Controller
     {
         return View();
     }
-    
+
     [HttpPost]
     public IActionResult Add(ContactModel model)
     {
@@ -73,10 +73,10 @@ public class ContactController : Controller
         {
             return View();
         }
-        
+
         model.Id = ++_currentId;
         _contacts.Add(model.Id, model);
-        
+
         return View("Index", _contacts);
     }
 
@@ -88,7 +88,7 @@ public class ContactController : Controller
 
     public IActionResult Details(int id)
     {
-        
+
         return View(_contacts[id]);
     }
 
