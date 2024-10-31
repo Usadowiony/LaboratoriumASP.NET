@@ -21,7 +21,10 @@ public class ContactModel
     
     [EmailAddress]
     public string Email { get; set; }
-    
+
+    [Display(Name = "Priorytet")]
+    public Priority Priority { get; set; }
+
     [Phone]
     [RegularExpression("\\d{3} \\d{3} \\d{3}", ErrorMessage = "Wpisz numer wg wzory: xxx xxx xxx")]
     public string PhoneNumber { get; set; }
