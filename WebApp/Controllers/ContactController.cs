@@ -57,7 +57,7 @@ public class ContactController : Controller
 
     public IActionResult Index()
     {
-        return View(_contacts);
+        return View(_contacts.Values.ToList());
     }
 
     [HttpGet]
@@ -77,13 +77,13 @@ public class ContactController : Controller
         model.Id = ++_currentId;
         _contacts.Add(model.Id, model);
 
-        return View("Index", _contacts);
+        return View("Index", _contacts.Values.ToList());
     }
 
     public IActionResult Delete(int id)
     {
         _contacts.Remove(id);
-        return View("Index", _contacts);
+        return View("Index", _contacts.Values.ToList());
     }
 
     public IActionResult Details(int id)
@@ -94,6 +94,6 @@ public class ContactController : Controller
 
     public IActionResult Back()
     {
-        return View("Index", _contacts);
+        return View("Index", _contacts.Values.ToList());
     }
 }
