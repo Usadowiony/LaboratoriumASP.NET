@@ -9,10 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc3e6ac5-e0dc-48e7-8fc4-a866fcaaf015" name="Changes" comment="">
+    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/EnumExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/EnumExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/IContactService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/MemoryContactService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Priority.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Priority.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Edit.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +32,7 @@
     </option>
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="autoShow" value="false" />
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -41,12 +48,12 @@
     &quot;assignee&quot;: &quot;amMooncake&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/amMooncake/LaboratoriumASP.NET.git&quot;,
-    &quot;accountId&quot;: &quot;7ab56775-d602-4232-aeb8-d668764d3441&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Usadowiony/LaboratoriumASP.NET.git",
+    "accountId": "88766097-f5e9-46be-8ef1-5255708f1b96"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8be3a835a33b22749161cd57a7225ef65e0c61c64c2bfd969e2e404130dd/Controller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/alekm/Desktop/wsei/3/asp net/LaboratoriumASP.NET/WebApp/Models/ContactModel.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,18 +77,19 @@
     ".NET Launch Settings Profile.WebApp: http.executor": "Debug",
     ".NET Launch Settings Profile.WebApp: https.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab3",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "lab4",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "HotReloadSettingsPage",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: https">
     <configuration name="WebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApp/WebApp.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -131,7 +139,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc3e6ac5-e0dc-48e7-8fc4-a866fcaaf015" name="Changes" comment="" />
+      <changelist id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="" />
       <created>1728464189548</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -144,6 +152,7 @@
       <workItem from="1729586517120" duration="8284000" />
       <workItem from="1729673362247" duration="5201000" />
       <workItem from="1729787357802" duration="482000" />
+      <workItem from="1735295480617" duration="426000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -265,6 +274,29 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/lab4" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />

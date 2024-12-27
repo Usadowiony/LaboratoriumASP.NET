@@ -1,96 +1,73 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
+using WebApp.Models.Services;
 
-namespace WebApp.Controllers
+namespace WebApp.Controllers;
+
+public class ContactController : Controller
 {
-    public class ContactController : Controller
+    private readonly IContactService _contactService;
+
+    public ContactController(IContactService contactService)
     {
-        private readonly IContactService _contactService;
+        _contactService = contactService;
+    }
+    
+    public IActionResult Index()
+    {
+        return View(_contactService.GetAll());
+    }
 
-        public ContactController(IContactService contactService)
+    [HttpGet]
+    public IActionResult Add()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Add(ContactModel model)
+    {
+        if (!ModelState.IsValid)
         {
-            _contactService = contactService;
+            return View();
         }
+        
+        _contactService.Add(model);
+        return RedirectToAction(nameof(Index));
+    }
 
-        public IActionResult Index()
-        {
-            return View(_contactService.GetAll().ToList());
-        }
+    public IActionResult Delete(int id)
+    {
+        _contactService.Delete(id);
+        return RedirectToAction(nameof(Index));
+    }
 
+    public IActionResult Details(int id)
+    {
+        
+        return View(_contactService.GetById(id));
+    }
 
+    public IActionResult Back()
+    {
+        return View("Index", _contactService.GetAll());
+    }
 
-        [HttpGet]
-        public IActionResult Add()
+    [HttpGet]
+    public ActionResult Edit(int id)
+    {
+        return View(_contactService.GetById(id));
+    }
+    
+    [HttpPost]
+    public ActionResult Edit(ContactModel model)
+    {
+        if (!ModelState.IsValid)
         {
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Add(ContactModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                _contactService.Add(model);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return View(model);
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Details(int id)
-        {
-            var contact = _contactService.FindById(id);
-            if (contact == null)
-            {
-                return NotFound();
-            }
-            return View(contact);
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            var contact = _contactService.FindById(id);
-            if (contact == null)
-            {
-                return NotFound();
-            }
-            return View(contact);
-        }
-
-        [HttpPost]
-        public IActionResult Edit(ContactModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                _contactService.Update(model);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return View(model);
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            var contact = _contactService.FindById(id);
-            if (contact == null)
-            {
-                return NotFound();
-            }
-            return View(contact);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            _contactService.Delete(id);
-            return RedirectToAction("Index");
-        }
+        _contactService.Update(model);
+        return RedirectToAction(nameof(Index));
     }
 }
