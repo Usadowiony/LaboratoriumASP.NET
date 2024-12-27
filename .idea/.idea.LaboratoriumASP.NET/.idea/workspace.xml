@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="work on lab5">
+    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="make changes in lab5">
+      <change afterPath="$PROJECT_DIR$/WebApp/Mappers/ContactMapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -145,7 +146,7 @@
       <workItem from="1729586517120" duration="8284000" />
       <workItem from="1729673362247" duration="5201000" />
       <workItem from="1729787357802" duration="482000" />
-      <workItem from="1735295480617" duration="2477000" />
+      <workItem from="1735295480617" duration="4120000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -283,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735297555004</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="make changes in lab5">
+      <option name="closed" value="true" />
+      <created>1735298211402</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735298211402</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +339,11 @@
     <MESSAGE value="fix lab4" />
     <MESSAGE value="created lab5" />
     <MESSAGE value="work on lab5" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on lab5" />
+    <MESSAGE value="make changes in lab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="make changes in lab5" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
