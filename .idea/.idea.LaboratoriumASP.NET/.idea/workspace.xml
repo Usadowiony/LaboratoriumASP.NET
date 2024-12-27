@@ -9,17 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="">
+    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="fix lab4">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/EnumExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/EnumExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/IContactService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/MemoryContactService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/Priority.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Priority.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaboratoriumASP.NET.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LaboratoriumASP.NET.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +144,7 @@
       <workItem from="1729586517120" duration="8284000" />
       <workItem from="1729673362247" duration="5201000" />
       <workItem from="1729787357802" duration="482000" />
-      <workItem from="1735295480617" duration="426000" />
+      <workItem from="1735295480617" duration="1196000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -266,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729594793215</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix lab4">
+      <option name="closed" value="true" />
+      <created>1735295961230</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735295961230</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +310,7 @@
     <MESSAGE value="bug fixes and select" />
     <MESSAGE value="Post method to calculator added" />
     <MESSAGE value="add birth calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="fix lab4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lab4" />
   </component>
 </project>
