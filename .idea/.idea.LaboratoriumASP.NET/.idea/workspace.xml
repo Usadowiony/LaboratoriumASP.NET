@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="make changes in lab5">
-      <change afterPath="$PROJECT_DIR$/WebApp/Mappers/ContactMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="work on fixing lab5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +143,7 @@
       <workItem from="1729586517120" duration="8284000" />
       <workItem from="1729673362247" duration="5201000" />
       <workItem from="1729787357802" duration="482000" />
-      <workItem from="1735295480617" duration="4120000" />
+      <workItem from="1735295480617" duration="4481000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -292,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735298211402</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="work on fixing lab5">
+      <option name="closed" value="true" />
+      <created>1735299858181</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735299858181</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +345,8 @@
     <MESSAGE value="created lab5" />
     <MESSAGE value="work on lab5" />
     <MESSAGE value="make changes in lab5" />
-    <option name="LAST_COMMIT_MESSAGE" value="make changes in lab5" />
+    <MESSAGE value="work on fixing lab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on fixing lab5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,46 +1,35 @@
-@model ContactModel
+@model WebApp.Models.ContactModel
 
 @{
-    ViewBag.Title = "title";
-
+    ViewBag.Title = "Dodaj kontakt";
     Layout = "_Layout";
 }
 
 <h2>Dodaj kontakt</h2>
 <form asp-action="Add" method="post">
     <div class="mb-3">
-        <label class="form-label" asp-for="FirstName"></label>
-        <input class="form-control" asp-for="FirstName" />
+        <label class="form-label" asp-for="FirstName">Imię</label>  <input class="form-control" asp-for="FirstName" />
         <span class="text-danger" asp-validation-for="FirstName"></span>
     </div>
     <div class="mb-3">
-        <label class="form-label" asp-for="LastName"></label>
-        <input class="form-control" asp-for="LastName" />
+        <label class="form-label" asp-for="LastName">Nazwisko</label>  <input class="form-control" asp-for="LastName" />
         <span class="text-danger" asp-validation-for="LastName"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="Email"></label>
+        <label class="form-label" asp-for="Email">Email</label>
         <input class="form-control" asp-for="Email" />
         <span class="text-danger" asp-validation-for="Email"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="PhoneNumber"></label>
-        <input class="form-control" asp-for="PhoneNumber" />
+        <label class="form-label" asp-for="PhoneNumber">Numer telefonu</label>  <input class="form-control" asp-for="PhoneNumber" />
         <span class="text-danger" asp-validation-for="PhoneNumber"></span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" asp-for="BirthDate"></label>
-        <input class="form-control" asp-for="BirthDate" />
+        <label class="form-label" asp-for="BirthDate">Data urodzenia</label>  <input class="form-control" asp-for="BirthDate" />
         <span class="text-danger" asp-validation-for="BirthDate"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Priority" class="control-label"></label>
-        <select asp-for="Priority" class="form-control" asp-items="Html.GetEnumSelectList<WebApp.Models.Priority>()"></select>
-        <span asp-validation-for="Priority" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-outline-primary">Dodaj</button>
