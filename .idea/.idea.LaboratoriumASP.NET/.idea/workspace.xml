@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="work" />
+    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="finish lab5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +144,7 @@
       <workItem from="1729673362247" duration="5201000" />
       <workItem from="1729787357802" duration="482000" />
       <workItem from="1735295480617" duration="5331000" />
-      <workItem from="1735593986925" duration="377000" />
+      <workItem from="1735593986925" duration="745000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -314,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735594341762</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="finish lab5">
+      <option name="closed" value="true" />
+      <created>1735594508662</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1735594508662</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +373,8 @@
     <MESSAGE value="work on fixing lab5" />
     <MESSAGE value="fix lab5" />
     <MESSAGE value="work" />
-    <option name="LAST_COMMIT_MESSAGE" value="work" />
+    <MESSAGE value="finish lab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish lab5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
