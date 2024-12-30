@@ -12,4 +12,7 @@ public class ContactEntity
     public DateTime BirthDate { get; set; }
     public string Email { get; set; }
     public string PhoneNumber { get; set; }
+    public int OrganizationId { get; set; }
+    public OrganizationEntity? Organization { get; set; }
+    public DateTime Created { get; set; }
 }
