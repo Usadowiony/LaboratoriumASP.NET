@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Data.Entities;
 
 namespace WebApp.Models.Services;
 public interface IContactService
@@ -8,4 +9,6 @@ public interface IContactService
     void Delete(int id);
     List<ContactModel> GetAll();
     ContactModel? GetById(int id);
+    
+    List<OrganizationEntity> GetAllOrganizations();
 }

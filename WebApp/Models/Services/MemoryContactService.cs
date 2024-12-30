@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Data.Entities;
 
 namespace WebApp.Models.Services;
 public class MemoryContactService : IContactService
@@ -65,5 +66,9 @@ public class MemoryContactService : IContactService
     public ContactModel? GetById(int id)
     {
         return _contacts[id];
+    }
+    public List<OrganizationEntity> GetAllOrganizations()
+    {
+        throw new NotImplementedException();
     }
 }

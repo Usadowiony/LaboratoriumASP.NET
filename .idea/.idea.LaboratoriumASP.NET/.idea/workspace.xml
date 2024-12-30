@@ -9,9 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="created lab6">
-      <change beforePath="$PROJECT_DIR$/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Entities/ContactEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Entities/ContactEntity.cs" afterDir="false" />
+    <list default="true" id="a7a738dc-31f2-4a39-a5e6-3fc25c120310" name="Changes" comment="work on lab6">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASP.NET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Controllers/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/ContactModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Services/EFContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Services/EFContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Services/IContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Services/IContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/Services/MemoryContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/Services/MemoryContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/Contact/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/Contact/Add.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +152,7 @@
       <workItem from="1729673362247" duration="5201000" />
       <workItem from="1729787357802" duration="482000" />
       <workItem from="1735295480617" duration="5331000" />
-      <workItem from="1735593986925" duration="1071000" />
+      <workItem from="1735593986925" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -333,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735594895546</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="work on lab6">
+      <option name="closed" value="true" />
+      <created>1735595345030</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1735595345030</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +399,8 @@
     <MESSAGE value="work" />
     <MESSAGE value="finish lab5" />
     <MESSAGE value="created lab6" />
-    <option name="LAST_COMMIT_MESSAGE" value="created lab6" />
+    <MESSAGE value="work on lab6" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on lab6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
